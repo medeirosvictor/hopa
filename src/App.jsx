@@ -20,10 +20,8 @@ function App() {
         <>
             <div>
                 <header className={classes.header}>
-                    <h1 className={classes.h1}>Rohpa</h1>
-                    <h2 className={classes.h2}>
-                        sem ansia pra ter nem tedio de possuir
-                    </h2>
+                    <h1 className={classes.h1}>Hopa</h1>
+                    <h2 className={classes.h2}>closet virtual</h2>
                 </header>
                 <main>
                     <ApparelCarousel apparels={apparelsHeadwear} />

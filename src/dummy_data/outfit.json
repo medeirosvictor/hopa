@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Casual Day Out",
+        "outfit": {
+            "headwear": {
+                "id": 5,
+                "name": "whitebuckethat"
+            },
+            "torsowear": {
+                "id": 3,
+                "name": "lululemon-t-shirt-blue"
+            },
+            "legwear": {
+                "id": 1,
+                "name": "levis-baggy-black-jeans"
+            },
+            "footwear": {
+                "id": 4,
+                "name": "vans-shoes"
+            }
+        },
+        "timesUsed": 0
+    },
+    {
+        "id": 2,
+        "name": "Evening Stroll",
+        "outfit": {
+            "headwear": {
+                "id": 5,
+                "name": "whitebuckethat"
+            },
+            "torsowear": {
+                "id": 2,
+                "name": "lululemon-t-shirt-black"
+            },
+            "legwear": {
+                "id": 1,
+                "name": "levis-baggy-black-jeans"
+            },
+            "footwear": {
+                "id": 4,
+                "name": "vans-shoes"
+            }
+        },
+        "timesUsed": 0
+    }
+]
