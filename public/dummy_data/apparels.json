@@ -6,9 +6,8 @@
         "type": "jeans",
         "color": "black",
         "position": "lower",
-        "icon": "👖",
         "hasPictureWearingIt": true,
-        "picture": "levis-baggy-black-jeans.jpg"
+        "picture": "./dummy_data/images/levis-baggy-black-jeans.jpg"
     },
     {
         "id": 2,
@@ -17,9 +16,8 @@
         "type": "t-shirt",
         "color": "black",
         "position": "upper",
-        "icon": "👕",
         "hasPictureWearingIt": true,
-        "picture": "lululemon-t-shirt-black.webp"
+        "picture": "./dummy_data/images/lululemon-t-shirt-black.webp"
     },
     {
         "id": 3,
@@ -28,9 +26,8 @@
         "type": "t-shirt",
         "color": "blue",
         "position": "upper",
-        "icon": "👕",
         "hasPictureWearingIt": true,
-        "picture": "lululemon-t-shirt-blue.webp"
+        "picture": "./dummy_data/images/lululemon-t-shirt-blue.webp"
     },
     {
         "id": 4,
@@ -39,9 +36,8 @@
         "type": "shoes",
         "color": "various",
         "position": "feet",
-        "icon": "👟",
         "hasPictureWearingIt": true,
-        "picture": "vans-shoes.jpg"
+        "picture": "./dummy_data/images/vans-shoes.jpg"
     },
     {
         "id": 5,
@@ -50,8 +46,7 @@
         "type": "hat",
         "color": "white",
         "position": "top",
-        "icon": "🎩",
         "hasPictureWearingIt": true,
-        "picture": "whitebuckethat.webp"
+        "picture": "./dummy_data/images/whitebuckethat.webp"
     }
 ]

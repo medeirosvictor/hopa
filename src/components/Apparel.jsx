@@ -1,3 +1,5 @@
+import ApparelImage from "./ApparelImage";
+
 function Apparel({ info }) {
     const classes = {
         container: "flex flex-col justify-center items-center",
@@ -15,12 +17,11 @@ function Apparel({ info }) {
             <div className={classes.type}>Type: {info.type}</div>
             <div className={classes.color}>Color: {info.color}</div>
             <div className={classes.position}>Position: {info.position}</div>
-            <div className={classes.icon}>Icon: {info.icon}</div>
             <div>
                 Has Picture Wearing It:{" "}
                 {info.hasPictureWearingIt ? "Yes" : "No"}
             </div>
-            <div>Picture: {info.picture}</div>
+            <ApparelImage image={info.picture} />
             <div>ID: {info.id}</div>
         </div>
     );

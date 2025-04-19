@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "headwear",
+            "icon": "🎩"
+        },
+        {
+            "id": 2,
+            "name": "torsowear",
+            "icon": "👕"
+        },
+        {
+            "id": 3,
+            "name": "legwear",
+            "icon": "👖"
+        },
+        {
+            "id": 4,
+            "name": "footwear",
+            "icon": "👟"
+        }
+    ]
+}

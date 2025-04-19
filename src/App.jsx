@@ -1,6 +1,7 @@
 import Piece from "./components/Apparel";
 import ApparelCarousel from "./components/ApparelCarousel";
-import apparels from "./dummy_data/apparels.json";
+import apparels from "../public/dummy_data/apparels.json";
+import categoriesData from "../public/dummy_data/categories.json";
 
 function App() {
     const classes = {
@@ -9,12 +10,7 @@ function App() {
         h2: "font-bold text-xl align-middle text-center",
     };
 
-    const apparelsHeadwear = apparels.filter(
-        (piece) => piece.category === "headwear"
-    );
-    const apparelsTorsowear = apparels.filter(
-        (piece) => piece.category === "torsowear"
-    );
+    const categories = categoriesData.categories;
 
     return (
         <>
@@ -24,8 +20,18 @@ function App() {
                     <h2 className={classes.h2}>closet virtual</h2>
                 </header>
                 <main>
-                    <ApparelCarousel apparels={apparelsHeadwear} />
-                    <ApparelCarousel apparels={apparelsTorsowear} />
+                    {categories.map((category) => {
+                        const filteredApparels = apparels.filter(
+                            (piece) => piece.category === category.name
+                        );
+                        return (
+                            <ApparelCarousel
+                                key={category.id}
+                                apparels={filteredApparels}
+                                info={category}
+                            />
+                        );
+                    })}
 
                     <div>
                         Parece que vc ja vestiu essa combinacao antes! Check it
