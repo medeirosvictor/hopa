@@ -1,4 +1,3 @@
-import Piece from "./components/Apparel";
 import ApparelCarousel from "./components/ApparelCarousel";
 import apparels from "../public/dummy_data/apparels.json";
 import categoriesData from "../public/dummy_data/categories.json";
