@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 25px;
+    height: 25px;
+    background-color: #c2c2c2;
+    border: 1px solid black;
+}
+
+/* https://fjolt.com/article/css-pixel-art-generator */
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    display: block;
+    transform: scale(3.5);
+    box-shadow: 0px 1px #000000, 0px 2px #000000, 1px 2px #000000,
+        0px 3px #000000, 1px 3px #000000, 2px 3px #000000, 0px 4px #000000,
+        1px 4px #000000, 0px 5px #000000;
+    bottom: 50%;
+    position: relative;
+    left: -10%;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    display: block;
+    transform: scale(3.5) rotate(180deg);
+    box-shadow: 0px 1px #000000, 0px 2px #000000, 1px 2px #000000,
+        0px 3px #000000, 1px 3px #000000, 2px 3px #000000, 0px 4px #000000,
+        1px 4px #000000, 0px 5px #000000;
+    top: 42%;
+    position: relative;
+    right: -10%;
+}
