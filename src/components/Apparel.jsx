@@ -2,7 +2,7 @@ import ApparelImage from "./ApparelImage";
 
 function Apparel({ info }) {
     const classes = {
-        container: "flex justify-center items-center",
+        container: "flex justify-center items-center gap-5",
         icon: "text-sm",
         color: "text-sm",
         position: "text-sm",

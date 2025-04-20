@@ -18,6 +18,12 @@ function App() {
                     <h1 className={classes.h1}>Hopa</h1>
                     <h2 className={classes.h2}>closet virtual</h2>
                 </header>
+                <div className="flex gap-10 font-bold">
+                    <p>ADD PECA</p>
+                    <p>OUTFITS</p>
+                    <p>PERFIL</p>
+                </div>
+
                 <main>
                     {categories.map((category) => {
                         const filteredApparels = apparels.filter(
