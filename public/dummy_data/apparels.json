@@ -48,5 +48,25 @@
         "position": "top",
         "hasPictureWearingIt": true,
         "picture": "./dummy_data/images/whitebuckethat.webp"
+    },
+    {
+        "id": 6,
+        "name": "bluejeans",
+        "category": "legwear",
+        "type": "jeans",
+        "color": "blue",
+        "position": "lower",
+        "hasPictureWearingIt": true,
+        "picture": "./dummy_data/images/bluejeans.webp"
+    },
+    {
+        "id": 7,
+        "name": "jordans",
+        "category": "footwear",
+        "type": "sneaker",
+        "color": "white/black/red",
+        "position": "lower",
+        "hasPictureWearingIt": true,
+        "picture": "./dummy_data/images/jordans.jpg"
     }
 ]
