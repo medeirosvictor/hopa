@@ -10,11 +10,11 @@ function ApparelCarousel({ apparels, info }) {
     const [carouselVisible, setCarouselVisible] = useState(true);
 
     const classes = {
-        carouselWrapper: "max-w-300 mx-auto my-5",
+        carouselWrapper: "max-w-[300px] mx-auto my-5",
         carouselTitle: "text-2xl font-bold mb-4 align-middle text-center",
         carousel: "flex flex-row overflow-x-scroll",
         slide: "flex-shrink-0 w-64 h-64 m-2",
-        noCarouselWrapper: "max-w-300 mx-auto my-5 text-center",
+        noCarouselWrapper: "max-w-[300px] mx-auto my-5 text-center",
     };
 
     const apparelCategory =
@@ -40,7 +40,7 @@ function ApparelCarousel({ apparels, info }) {
                         className={classes.carousel}
                         spaceBetween={25}
                         slidesPerView={1}
-                        loop={true}
+                        loop={apparels.length > 1}
                         freeMode={true}
                         modules={[Navigation]}
                         navigation={true}
