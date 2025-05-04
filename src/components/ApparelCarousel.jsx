@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Apparel from "./Apparel";
+import ApparelCard from "./ApparelCard";
 import ApparelFilter from "./ApparelFilter";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ function ApparelCarousel({ apparels, info }) {
     const [carouselVisible, setCarouselVisible] = useState(true);
 
     const classes = {
-        carouselWrapper: "max-w-[300px] mx-auto my-5",
+        carouselWrapper: "max-w-[500px] mx-auto my-5",
         carouselTitle: "text-2xl font-bold mb-4 align-middle text-center",
         carousel: "flex flex-row overflow-x-scroll",
         slide: "flex-shrink-0 w-64 h-64 m-2",
@@ -49,7 +49,7 @@ function ApparelCarousel({ apparels, info }) {
                     >
                         {apparels.map((apparel) => (
                             <SwiperSlide className={classes.slide}>
-                                <Apparel key={apparel.id} info={apparel} />
+                                <ApparelCard key={apparel.id} info={apparel} />
                             </SwiperSlide>
                         ))}
                     </Swiper>

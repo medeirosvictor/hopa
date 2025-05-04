@@ -1,6 +1,6 @@
 function ApparelImage({ image }) {
     const classes = {
-        img: "rounded-xl border border-gray-200 w-[300px] h-[250px] object-cover",
+        img: "rounded-xl border border-gray-200 max-w-[400px] w-100 h-[300px] object-cover",
     };
 
     return (

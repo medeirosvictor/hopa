@@ -16,7 +16,7 @@ function Header() {
 
             <div className="flex gap-10 font-bold align-middle justify-center">
                 <NavLink to="/">HOME</NavLink>
-                <NavLink to="/add-articles">ADD PECA</NavLink>
+                <NavLink to="/add-apparel">ADD PECA</NavLink>
                 <NavLink to="/outfits">OUTFITS</NavLink>
                 <NavLink to="/profile">PERFIL</NavLink>
             </div>
