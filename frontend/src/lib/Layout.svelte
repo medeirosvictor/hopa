@@ -4,12 +4,12 @@
   import Router from './components/Router.svelte'
 </script>
 
-<div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
+<div class="min-h-screen flex flex-col" style="background-color: var(--color-bg); color: var(--color-fg);">
   <Header />
-  
+
   <main class="flex-grow">
     <Router />
   </main>
-  
+
   <Footer />
 </div>

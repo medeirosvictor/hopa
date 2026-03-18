@@ -2,31 +2,33 @@
   import { page } from '../stores/router'
 </script>
 
-<header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="/" class="text-2xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+<header class="border-b" style="border-color: var(--color-border); background-color: var(--color-bg);">
+  <div class="max-w-6xl mx-auto px-6 pt-6 pb-4 flex flex-col items-center gap-4">
+    <a
+      href="/"
+      class="text-3xl font-black uppercase tracking-tighter leading-none"
+      style="color: var(--color-fg);"
+    >
       Hopa
     </a>
-    
-    <nav class="flex gap-6">
-      <a 
-        href="/" 
-        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors {$page === '/' ? 'text-blue-600 dark:text-blue-400' : ''}"
-      >
-        Closet
-      </a>
-      <a 
-        href="/outfits" 
-        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors {$page === '/outfits' ? 'text-blue-600 dark:text-blue-400' : ''}"
-      >
-        Outfits
-      </a>
-      <a 
-        href="/stats" 
-        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors {$page === '/stats' ? 'text-blue-600 dark:text-blue-400' : ''}"
-      >
-        Stats
-      </a>
+
+    <nav class="flex gap-8">
+      {#each [
+        { href: '/', label: 'Closet' },
+        { href: '/outfits', label: 'Outfits' },
+        { href: '/stats', label: 'Stats' },
+      ] as link}
+        <a
+          href={link.href}
+          class="text-sm font-semibold uppercase tracking-widest pb-0.5 transition-none"
+          style="
+            color: {$page === link.href ? 'var(--color-fg)' : 'var(--color-fg-muted)'};
+            border-bottom: {$page === link.href ? '2px solid var(--color-fg)' : '2px solid transparent'};
+          "
+        >
+          {link.label}
+        </a>
+      {/each}
     </nav>
   </div>
 </header>

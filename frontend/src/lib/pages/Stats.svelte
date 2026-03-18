@@ -1,10 +1,14 @@
-<div class="container mx-auto px-4 py-8">
-  <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-    <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-      Statistics
-    </h2>
-    <p class="text-gray-600 dark:text-gray-400">
-      See insights about your wardrobe usage.
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-black uppercase tracking-tighter mb-1" style="color: var(--color-fg);">
+    Statistics
+  </h1>
+  <p class="text-sm uppercase tracking-widest mb-12" style="color: var(--color-fg-muted);">
+    Know your wardrobe
+  </p>
+
+  <div class="border-t py-16 text-center" style="border-color: var(--color-border);">
+    <p class="text-xs uppercase tracking-widest" style="color: var(--color-fg-muted);">
+      Coming soon — usage data, donation suggestions, and wear frequency
     </p>
   </div>
 </div>
